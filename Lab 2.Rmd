@@ -1,13 +1,12 @@
-```{r}
+
 ###Steph Bossert lab
 ### Lab 2
-```
+
 
 ```{r}
-
 library(tidyverse)
 plastic_waste <- read_csv("data/plastic-waste.csv")
- View(plastic_waste) 
+# View(plastic_waste) 
 
 ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
   geom_histogram(binwidth = 0.2)
